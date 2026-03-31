@@ -61,13 +61,13 @@
 ; =====================================================================
 
 ; Win + Alt + F1 -> Switch to Purple Theme
-#!F1::SwitchTheme(EnvGet("USERPROFILE") "\Desktop\Wallpapers\firewatch.jpg", "0xAC6D73")
+#!F1::SwitchTheme(EnvGet("USERPROFILE") "\Downloads\WindowsSetup\win_dotfiles_rice-main\Wallpapers\firewatch.jpg", "0xAC6D73")
 
 ; Win + Alt + F2 -> Switch to Green Theme
-#!F2::SwitchTheme(EnvGet("USERPROFILE") "\Desktop\Wallpapers\greenery.jpg", "0x058249")
+#!F2::SwitchTheme(EnvGet("USERPROFILE") "\Downloads\WindowsSetup\win_dotfiles_rice-main\Wallpapers\greenery.jpg", "0x058249")
 
 ; Win + Alt + F3 -> Switch to Gray Theme
-#!F3::SwitchTheme(EnvGet("USERPROFILE") "\Desktop\Wallpapers\white_lava.jpg", "0x101010")
+#!F3::SwitchTheme(EnvGet("USERPROFILE") "\Downloads\WindowsSetup\win_dotfiles_rice-main\Wallpapers\white_lava.jpg", "0x101010")
 
 SwitchTheme(WallpaperPath, AccentColorABGR) {
     ; 1. Change Wallpaper instantly
