@@ -1,7 +1,7 @@
 Write-Host "Fetching dotfiles repo..." -ForegroundColor Cyan
 
 # url of the files
-$repoUrl = "https://github.com/marhund/win_dotfiles_rice/archive/refs/heads/main.zip""
+$repoUrl = "https://github.com/marhund/win_dotfiles_rice/archive/refs/heads/main.zip"
 
 # temporary saving
 $zipPath = "$env:TEMP\dotfiles.zip"
