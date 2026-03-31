@@ -1,7 +1,7 @@
 Write-Host "Fetching dotfiles repo..." -ForegroundColor Cyan
 
 # url of the files
-$repoUrl = "https://github.com/marhund/win_dotfiles_rice"
+$repoUrl = "https://github.com/marhund/win_dotfiles_rice/archive/refs/heads/main.zip""
 
 # temporary saving
 $zipPath = "$env:TEMP\dotfiles.zip"
@@ -17,7 +17,7 @@ Remove-Item $zipPath -Force
 
 # find and run the main script
 # (Note: GitHub automatically adds '-main' to the extracted folder name) - AI said that so it must be true
-$scriptPath = "$extractPath\win_dotfiles_rice\main.ps1"
+$scriptPath = "$extractPath\win_dotfiles_rice-main\main.ps1"
 
 Write-Host "Launching setup script..." -ForegroundColor Green
 Set-ExecutionPolicy Bypass -Scope Process -Force
