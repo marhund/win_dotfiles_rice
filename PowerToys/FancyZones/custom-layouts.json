@@ -1,0 +1,90 @@
+{
+  "custom-layouts": [
+    {
+      "uuid": "{9B0F5EE2-DFE3-4D27-9012-FAF30D5CD8F0}",
+      "name": "Custom Grid",
+      "type": "grid",
+      "info": {
+        "rows": 2,
+        "columns": 3,
+        "rows-percentage": [
+          4994,
+          5006
+        ],
+        "columns-percentage": [
+          5000,
+          2462,
+          2538
+        ],
+        "cell-child-map": [
+          [
+            0,
+            1,
+            1
+          ],
+          [
+            0,
+            2,
+            3
+          ]
+        ],
+        "show-spacing": true,
+        "spacing": 11,
+        "sensitivity-radius": 21
+      }
+    },
+    {
+      "uuid": "{DED4C7D9-4193-4616-9AC4-1CA4F5E4828D}",
+      "name": "Desktop_Normal",
+      "type": "grid",
+      "info": {
+        "rows": 2,
+        "columns": 2,
+        "rows-percentage": [
+          5098,
+          4902
+        ],
+        "columns-percentage": [
+          5194,
+          4806
+        ],
+        "cell-child-map": [
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            2
+          ]
+        ],
+        "show-spacing": true,
+        "spacing": 16,
+        "sensitivity-radius": 20
+      }
+    },
+    {
+      "uuid": "{23E7FD30-319D-434C-8A96-4FE386703295}",
+      "name": "Full",
+      "type": "grid",
+      "info": {
+        "rows": 1,
+        "columns": 1,
+        "rows-percentage": [
+          10000
+        ],
+        "columns-percentage": [
+          10000
+        ],
+        "cell-child-map": [
+          [
+            0
+          ]
+        ],
+        "show-spacing": true,
+        "spacing": 16,
+        "sensitivity-radius": 20
+      }
+    }
+  ]
+}

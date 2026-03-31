@@ -1,0 +1,694 @@
+{
+  "Hotkey": "Ctrl \u002B Alt \u002B Space",
+  "OpenResultModifiers": "Alt",
+  "ColorScheme": "System",
+  "ShowOpenResultHotkey": true,
+  "WindowSize": 756,
+  "PreviewHotkey": "F1",
+  "AutoCompleteHotkey": "Ctrl \u002B Tab",
+  "AutoCompleteHotkey2": "",
+  "SelectNextItemHotkey": "Tab",
+  "SelectNextItemHotkey2": "",
+  "SelectPrevItemHotkey": "Shift \u002B Tab",
+  "SelectPrevItemHotkey2": "",
+  "SelectNextPageHotkey": "PageUp",
+  "SelectPrevPageHotkey": "PageDown",
+  "OpenContextMenuHotkey": "Ctrl\u002BO",
+  "SettingWindowHotkey": "Ctrl\u002BI",
+  "OpenHistoryHotkey": "Ctrl\u002BH",
+  "CycleHistoryUpHotkey": "Alt \u002B Up",
+  "CycleHistoryDownHotkey": "Alt \u002B Down",
+  "DialogJumpHotkey": "Alt \u002B G",
+  "Language": "system",
+  "Theme": "Circle System",
+  "UseDropShadowEffect": true,
+  "BackdropType": 3,
+  "ReleaseNotesVersion": "2.0.3",
+  "WindowHeightSize": 50,
+  "ItemHeightSize": 58,
+  "QueryBoxFontSize": 16,
+  "ResultItemFontSize": 16,
+  "ResultSubItemFontSize": 13,
+  "QueryBoxFont": "JetBrainsMono NF",
+  "QueryBoxFontStyle": "Oblique",
+  "QueryBoxFontWeight": "SemiBold",
+  "QueryBoxFontStretch": "Normal",
+  "ResultFont": "JetBrainsMono NF",
+  "ResultFontStyle": "Normal",
+  "ResultFontWeight": "Normal",
+  "ResultFontStretch": "Normal",
+  "ResultSubFont": "JetBrainsMono NF",
+  "ResultSubFontStyle": "Oblique",
+  "ResultSubFontWeight": "ExtraLight",
+  "ResultSubFontStretch": "Normal",
+  "UseGlyphIcons": true,
+  "UseAnimation": true,
+  "UseSound": false,
+  "SoundVolume": 50,
+  "ShowBadges": true,
+  "ShowBadgesGlobalOnly": false,
+  "SettingWindowFont": "Segoe UI",
+  "UseClock": true,
+  "UseDate": false,
+  "TimeFormat": "hh:mm tt",
+  "DateFormat": "MM\u0027/\u0027dd ddd",
+  "FirstLaunch": false,
+  "SettingWindowWidth": 1283,
+  "SettingWindowHeight": 715,
+  "SettingWindowTop": 90.5,
+  "SettingWindowLeft": 78.5,
+  "SettingWindowState": 0,
+  "ShowPlaceholder": true,
+  "PlaceholderText": "",
+  "ShowHomePage": true,
+  "ShowHistoryResultsForHomePage": false,
+  "MaxHistoryResultsToShowForHomePage": 5,
+  "AutoRestartAfterChanging": true,
+  "ShowUnknownSourceWarning": true,
+  "AutoUpdatePlugins": true,
+  "CustomExplorerIndex": 0,
+  "CustomExplorerList": [
+    {
+      "Name": "Explorer",
+      "Path": "explorer",
+      "FileArgument": "/select, \u0022%f\u0022",
+      "DirectoryArgument": "\u0022%d\u0022",
+      "Editable": false
+    },
+    {
+      "Name": "Total Commander",
+      "Path": "C:\\Program Files\\totalcmd\\TOTALCMD64.exe",
+      "FileArgument": "/O /A /S /T \u0022%f\u0022",
+      "DirectoryArgument": "/O /A /S /T \u0022%d\u0022",
+      "Editable": true
+    },
+    {
+      "Name": "Directory Opus",
+      "Path": "C:\\Program Files\\GPSoftware\\Directory Opus\\dopusrt.exe",
+      "FileArgument": "/cmd Go \u0022%f\u0022 NEW",
+      "DirectoryArgument": "/cmd Go \u0022%d\u0022 NEW",
+      "Editable": true
+    },
+    {
+      "Name": "Files",
+      "Path": "Files-Stable",
+      "FileArgument": "-select \u0022%f\u0022",
+      "DirectoryArgument": "\u0022%d\u0022",
+      "Editable": true
+    }
+  ],
+  "CustomBrowserIndex": 4,
+  "CustomBrowserList": [
+    {
+      "Name": "Default",
+      "Path": "*",
+      "PrivateArg": "",
+      "EnablePrivate": false,
+      "OpenInTab": true,
+      "Editable": false
+    },
+    {
+      "Name": "Google Chrome",
+      "Path": "chrome",
+      "PrivateArg": "-incognito",
+      "EnablePrivate": false,
+      "OpenInTab": true,
+      "Editable": false
+    },
+    {
+      "Name": "Mozilla Firefox",
+      "Path": "firefox",
+      "PrivateArg": "-private",
+      "EnablePrivate": false,
+      "OpenInTab": true,
+      "Editable": false
+    },
+    {
+      "Name": "MS Edge",
+      "Path": "msedge",
+      "PrivateArg": "-inPrivate",
+      "EnablePrivate": false,
+      "OpenInTab": true,
+      "Editable": false
+    },
+    {
+      "Name": "Helium",
+      "Path": "C:\\Users\\mar\\AppData\\Local\\imput\\Helium\\Application\\chrome.exe",
+      "PrivateArg": null,
+      "EnablePrivate": false,
+      "OpenInTab": true,
+      "Editable": true
+    }
+  ],
+  "EnableDialogJump": true,
+  "AutoDialogJump": false,
+  "ShowDialogJumpWindow": false,
+  "DialogJumpWindowPosition": "UnderDialog",
+  "DialogJumpResultBehaviour": "LeftClick",
+  "DialogJumpFileResultBehaviour": "FullPath",
+  "LogLevel": "INFO",
+  "ShouldUsePinyin": true,
+  "UseDoublePinyin": false,
+  "DoublePinyinSchema": "XiaoHe",
+  "AlwaysPreview": true,
+  "AlwaysStartEn": false,
+  "QuerySearchPrecision": "Regular",
+  "AutoUpdates": false,
+  "WindowLeft": 720,
+  "WindowTop": 239.5,
+  "PreviousScreenWidth": 0,
+  "PreviousScreenHeight": 0,
+  "PreviousDpiX": 0,
+  "PreviousDpiY": 0,
+  "CustomWindowLeft": 0,
+  "CustomWindowTop": 0,
+  "KeepMaxResults": false,
+  "MaxResultsToShow": 6,
+  "ActivateTimes": 847,
+  "CustomPluginHotkeys": [],
+  "CustomShortcuts": [],
+  "DontPromptUpdateMsg": false,
+  "EnableUpdateLog": false,
+  "StartFlowLauncherOnSystemStartup": true,
+  "UseLogonTaskForStartup": false,
+  "HideOnStartup": true,
+  "HideNotifyIcon": false,
+  "LeaveCmdOpen": false,
+  "HideWhenDeactivated": true,
+  "ShowAtTopmost": false,
+  "SearchQueryResultsWithDelay": false,
+  "SearchDelayTime": 150,
+  "SearchWindowScreen": "Cursor",
+  "SearchWindowAlign": "Center",
+  "CustomScreenNumber": 1,
+  "IgnoreHotkeysOnFullscreen": false,
+  "Proxy": {
+    "Enabled": false,
+    "Server": null,
+    "Port": 0,
+    "UserName": null,
+    "Password": null
+  },
+  "LastQueryMode": "Selected",
+  "AnimationSpeed": "Medium",
+  "CustomAnimationLength": 360,
+  "PluginSettings": {
+    "PythonExecutablePath": "C:\\Users\\mar\\AppData\\Roaming\\FlowLauncher\\Environments\\Python\\PythonEmbeddable-v3.11.4\\pythonw.exe",
+    "NodeExecutablePath": "C:\\Users\\mar\\AppData\\Roaming\\FlowLauncher\\Environments\\Node.js\\Node-v16.18.0\\node-v16.18.0-win-x64\\node.exe",
+    "Plugins": {
+      "0ECADE17459B49F587BF81DC3A125110": {
+        "ID": "0ECADE17459B49F587BF81DC3A125110",
+        "Name": "Browser Bookmarks",
+        "Version": "2.0.3",
+        "ActionKeywords": [
+          "b"
+        ],
+        "Priority": 0,
+        "SearchDelayTime": null,
+        "Disabled": false,
+        "HomeDisabled": false
+      },
+      "CEA0FDFC6D3B4085823D60DC76F28855": {
+        "ID": "CEA0FDFC6D3B4085823D60DC76F28855",
+        "Name": "Calculator",
+        "Version": "2.0.3",
+        "ActionKeywords": [
+          "*"
+        ],
+        "Priority": 0,
+        "SearchDelayTime": null,
+        "Disabled": false,
+        "HomeDisabled": false
+      },
+      "572be03c74c642baae319fc283e561a8": {
+        "ID": "572be03c74c642baae319fc283e561a8",
+        "Name": "Explorer",
+        "Version": "2.0.3",
+        "ActionKeywords": [
+          "*",
+          "doc:",
+          "*",
+          "*",
+          "*"
+        ],
+        "Priority": 0,
+        "SearchDelayTime": null,
+        "Disabled": false,
+        "HomeDisabled": false
+      },
+      "6A122269676E40EB86EB543B945932B9": {
+        "ID": "6A122269676E40EB86EB543B945932B9",
+        "Name": "Plugin Indicator",
+        "Version": "2.0.3",
+        "ActionKeywords": [
+          "?"
+        ],
+        "Priority": 0,
+        "SearchDelayTime": null,
+        "Disabled": false,
+        "HomeDisabled": false
+      },
+      "9f8f9b14-2518-4907-b211-35ab6290dee7": {
+        "ID": "9f8f9b14-2518-4907-b211-35ab6290dee7",
+        "Name": "Plugins Manager",
+        "Version": "2.0.3",
+        "ActionKeywords": [
+          "pm"
+        ],
+        "Priority": 0,
+        "SearchDelayTime": null,
+        "Disabled": false,
+        "HomeDisabled": false
+      },
+      "b64d0a79-329a-48b0-b53f-d658318a1bf6": {
+        "ID": "b64d0a79-329a-48b0-b53f-d658318a1bf6",
+        "Name": "Process Killer",
+        "Version": "2.0.3",
+        "ActionKeywords": [
+          "kill"
+        ],
+        "Priority": 0,
+        "SearchDelayTime": null,
+        "Disabled": false,
+        "HomeDisabled": false
+      },
+      "791FC278BA414111B8D1886DFE447410": {
+        "ID": "791FC278BA414111B8D1886DFE447410",
+        "Name": "Program",
+        "Version": "2.0.3",
+        "ActionKeywords": [
+          "*"
+        ],
+        "Priority": 0,
+        "SearchDelayTime": null,
+        "Disabled": false,
+        "HomeDisabled": false
+      },
+      "D409510CD0D2481F853690A07E6DC426": {
+        "ID": "D409510CD0D2481F853690A07E6DC426",
+        "Name": "Shell",
+        "Version": "2.0.3",
+        "ActionKeywords": [
+          "\u003E"
+        ],
+        "Priority": 0,
+        "SearchDelayTime": null,
+        "Disabled": false,
+        "HomeDisabled": false
+      },
+      "CEA08895D2544B019B2E9C5009600DF4": {
+        "ID": "CEA08895D2544B019B2E9C5009600DF4",
+        "Name": "System Commands",
+        "Version": "2.0.3",
+        "ActionKeywords": [
+          "*"
+        ],
+        "Priority": 0,
+        "SearchDelayTime": null,
+        "Disabled": false,
+        "HomeDisabled": false
+      },
+      "0308FD86DE0A4DEE8D62B9B535370992": {
+        "ID": "0308FD86DE0A4DEE8D62B9B535370992",
+        "Name": "URL",
+        "Version": "2.0.3",
+        "ActionKeywords": [
+          "*"
+        ],
+        "Priority": 0,
+        "SearchDelayTime": null,
+        "Disabled": false,
+        "HomeDisabled": false
+      },
+      "565B73353DBF4806919830B9202EE3BF": {
+        "ID": "565B73353DBF4806919830B9202EE3BF",
+        "Name": "Web Searches",
+        "Version": "2.0.3",
+        "ActionKeywords": [
+          "*",
+          "sc",
+          "wiki",
+          "findicon",
+          "facebook",
+          "twitter",
+          "maps",
+          "translate",
+          "duckduckgo",
+          "github",
+          "gist",
+          "gmail",
+          "drive",
+          "wolframalpha",
+          "stackoverflow",
+          "lucky",
+          "image",
+          "youtube",
+          "bing",
+          "yahoo",
+          "bd"
+        ],
+        "Priority": 0,
+        "SearchDelayTime": 450,
+        "Disabled": false,
+        "HomeDisabled": false
+      },
+      "5043CETYU6A748679OPA02D27D99677A": {
+        "ID": "5043CETYU6A748679OPA02D27D99677A",
+        "Name": "Windows Settings",
+        "Version": "2.0.3",
+        "ActionKeywords": [
+          "s"
+        ],
+        "Priority": 0,
+        "SearchDelayTime": null,
+        "Disabled": false,
+        "HomeDisabled": false
+      },
+      "9B36CE6181FC47FBB597AA2C29CD9B0A": {
+        "ID": "9B36CE6181FC47FBB597AA2C29CD9B0A",
+        "Name": "Colors",
+        "Version": "3.0.0",
+        "ActionKeywords": [
+          "*"
+        ],
+        "Priority": 0,
+        "SearchDelayTime": null,
+        "Disabled": false,
+        "HomeDisabled": false
+      },
+      "78c1bfc7-044e-46cd-b920-9e0ae0e7f234": {
+        "ID": "78c1bfc7-044e-46cd-b920-9e0ae0e7f234",
+        "Name": "ElementFlow",
+        "Version": "1.0.5",
+        "ActionKeywords": [
+          "ce"
+        ],
+        "Priority": 0,
+        "SearchDelayTime": null,
+        "Disabled": false,
+        "HomeDisabled": false
+      },
+      "EEC889D32E2A4F7FA7153C32B0C048F6": {
+        "ID": "EEC889D32E2A4F7FA7153C32B0C048F6",
+        "Name": "IP Details",
+        "Version": "1.0.0",
+        "ActionKeywords": [
+          "ip"
+        ],
+        "Priority": 0,
+        "SearchDelayTime": null,
+        "Disabled": false,
+        "HomeDisabled": false
+      },
+      "898FC7F0-4F38-401B-82E0-A852798C2D59": {
+        "ID": "898FC7F0-4F38-401B-82E0-A852798C2D59",
+        "Name": "Kitty",
+        "Version": "1.0.6",
+        "ActionKeywords": [
+          "kt"
+        ],
+        "Priority": 0,
+        "SearchDelayTime": null,
+        "Disabled": true,
+        "HomeDisabled": false
+      },
+      "e483e4f2-ec67-3c54-2aea-f823c5e5f61b": {
+        "ID": "e483e4f2-ec67-3c54-2aea-f823c5e5f61b",
+        "Name": "Lorem Ipsum Generator",
+        "Version": "3.0.0",
+        "ActionKeywords": [
+          "lorem"
+        ],
+        "Priority": 0,
+        "SearchDelayTime": null,
+        "Disabled": false,
+        "HomeDisabled": false
+      },
+      "d6ae32fd-2344-47d0-a33d-af6dbc093a9f": {
+        "ID": "d6ae32fd-2344-47d0-a33d-af6dbc093a9f",
+        "Name": "Nicknames Generator",
+        "Version": "2.0.0",
+        "ActionKeywords": [
+          "nm"
+        ],
+        "Priority": 0,
+        "SearchDelayTime": null,
+        "Disabled": false,
+        "HomeDisabled": false
+      },
+      "D2B1550D-7F24-4A9C-9952-2CF0A253A555": {
+        "ID": "D2B1550D-7F24-4A9C-9952-2CF0A253A555",
+        "Name": "Remove.bg",
+        "Version": "1.0.1",
+        "ActionKeywords": [
+          "bg"
+        ],
+        "Priority": 0,
+        "SearchDelayTime": null,
+        "Disabled": false,
+        "HomeDisabled": false
+      },
+      "5B7E53D506844D2D8B7001AA19F5EF8F": {
+        "ID": "5B7E53D506844D2D8B7001AA19F5EF8F",
+        "Name": "Todos",
+        "Version": "3.0.8",
+        "ActionKeywords": [
+          "td"
+        ],
+        "Priority": 0,
+        "SearchDelayTime": null,
+        "Disabled": false,
+        "HomeDisabled": false
+      },
+      "DF2EFA222C4A46F586FBBE815885D306": {
+        "ID": "DF2EFA222C4A46F586FBBE815885D306",
+        "Name": "WingetFlow",
+        "Version": "1.1.0",
+        "ActionKeywords": [
+          "wget"
+        ],
+        "Priority": 0,
+        "SearchDelayTime": null,
+        "Disabled": false,
+        "HomeDisabled": false
+      },
+      "763D015F571C48E4ACA5EF5DFD0BCA30": {
+        "ID": "763D015F571C48E4ACA5EF5DFD0BCA30",
+        "Name": "Statis",
+        "Version": "1.1.0",
+        "ActionKeywords": [
+          "st"
+        ],
+        "Priority": 0,
+        "SearchDelayTime": null,
+        "Disabled": false,
+        "HomeDisabled": false
+      },
+      "ddd30a33-c565-4dcf-9558-7bc5bb433e13": {
+        "ID": "ddd30a33-c565-4dcf-9558-7bc5bb433e13",
+        "Name": "Vim",
+        "Version": "0.0.2",
+        "ActionKeywords": [
+          "vm"
+        ],
+        "Priority": 0,
+        "SearchDelayTime": null,
+        "Disabled": false,
+        "HomeDisabled": false
+      },
+      "BCAF9CDAE1894F8A995D0FDE3505AB83": {
+        "ID": "BCAF9CDAE1894F8A995D0FDE3505AB83",
+        "Name": "Query Groups",
+        "Version": "2.0.0",
+        "ActionKeywords": [
+          "*",
+          "qg"
+        ],
+        "Priority": 0,
+        "SearchDelayTime": null,
+        "Disabled": false,
+        "HomeDisabled": false
+      },
+      "72E67DFE0F6F482395AF3CD0A3BC6F04": {
+        "ID": "72E67DFE0F6F482395AF3CD0A3BC6F04",
+        "Name": "WinsFlow",
+        "Version": "1.0.0",
+        "ActionKeywords": [
+          "wn"
+        ],
+        "Priority": 0,
+        "SearchDelayTime": null,
+        "Disabled": false,
+        "HomeDisabled": false
+      },
+      "A3EA904783E14335894354F09DC4B054": {
+        "ID": "A3EA904783E14335894354F09DC4B054",
+        "Name": "CdList",
+        "Version": "1.3.0",
+        "ActionKeywords": [
+          "cd"
+        ],
+        "Priority": 0,
+        "SearchDelayTime": null,
+        "Disabled": false,
+        "HomeDisabled": false
+      },
+      "df432fe0-9ff7-4ba1-b0fd-5ffd26efbf86": {
+        "ID": "df432fe0-9ff7-4ba1-b0fd-5ffd26efbf86",
+        "Name": "ChatGPT",
+        "Version": "1.3.0",
+        "ActionKeywords": [
+          "ai"
+        ],
+        "Priority": 0,
+        "SearchDelayTime": null,
+        "Disabled": true,
+        "HomeDisabled": false
+      },
+      "8BE6E623BC294D4684F86A47CA797742": {
+        "ID": "8BE6E623BC294D4684F86A47CA797742",
+        "Name": "Fake Data",
+        "Version": "1.0.0",
+        "ActionKeywords": [
+          "fake"
+        ],
+        "Priority": 0,
+        "SearchDelayTime": null,
+        "Disabled": false,
+        "HomeDisabled": false
+      },
+      "cb95613a-626f-4153-9c21-b1f7ea3bcf37": {
+        "ID": "cb95613a-626f-4153-9c21-b1f7ea3bcf37",
+        "Name": "LaunchNow",
+        "Version": "1.0.0",
+        "ActionKeywords": [
+          "ln"
+        ],
+        "Priority": 0,
+        "SearchDelayTime": null,
+        "Disabled": false,
+        "HomeDisabled": false
+      },
+      "e6a13bf1-5op9-2b96-a7fd-130b7vdt3d14": {
+        "ID": "e6a13bf1-5op9-2b96-a7fd-130b7vdt3d14",
+        "Name": "QuickLook",
+        "Version": "1.0.2",
+        "ActionKeywords": [
+          "*"
+        ],
+        "Priority": 0,
+        "SearchDelayTime": null,
+        "Disabled": true,
+        "HomeDisabled": false
+      },
+      "212D62DEB5FF4835AB5AF4638E1B360B": {
+        "ID": "212D62DEB5FF4835AB5AF4638E1B360B",
+        "Name": "Caffeine",
+        "Version": "1.2.0",
+        "ActionKeywords": [
+          "caf"
+        ],
+        "Priority": 0,
+        "SearchDelayTime": null,
+        "Disabled": false,
+        "HomeDisabled": false
+      },
+      "d6675ca0-9da6-4361-8342-95564214cd04": {
+        "ID": "d6675ca0-9da6-4361-8342-95564214cd04",
+        "Name": "Number Converter",
+        "Version": "1.0.2",
+        "ActionKeywords": [
+          "nc"
+        ],
+        "Priority": 0,
+        "SearchDelayTime": null,
+        "Disabled": false,
+        "HomeDisabled": false
+      },
+      "9E4A2B3C-5F6D-4E8A-9B1C-2D3E4F5A6B7C": {
+        "ID": "9E4A2B3C-5F6D-4E8A-9B1C-2D3E4F5A6B7C",
+        "Name": "Speed Test",
+        "Version": "1.2.1",
+        "ActionKeywords": [
+          "stest"
+        ],
+        "Priority": 0,
+        "SearchDelayTime": null,
+        "Disabled": false,
+        "HomeDisabled": false
+      },
+      "3cd1d9a8e92e4210a0fd30d1d65bb664": {
+        "ID": "3cd1d9a8e92e4210a0fd30d1d65bb664",
+        "Name": "Text Formatter",
+        "Version": "0.1.0",
+        "ActionKeywords": [
+          "ft"
+        ],
+        "Priority": 0,
+        "SearchDelayTime": null,
+        "Disabled": false,
+        "HomeDisabled": false
+      },
+      "70CED0AC-3D9D-4255-AD0B-D9A37862E879": {
+        "ID": "70CED0AC-3D9D-4255-AD0B-D9A37862E879",
+        "Name": "AnyVideo Downloader",
+        "Version": "2.3.0",
+        "ActionKeywords": [
+          "vd"
+        ],
+        "Priority": 0,
+        "SearchDelayTime": null,
+        "Disabled": false,
+        "HomeDisabled": false
+      },
+      "e4a91f4c2be9434e8f76982cb3a4c1df": {
+        "ID": "e4a91f4c2be9434e8f76982cb3a4c1df",
+        "Name": "Symbols",
+        "Version": "1.2.0",
+        "ActionKeywords": [
+          "symb"
+        ],
+        "Priority": 0,
+        "SearchDelayTime": null,
+        "Disabled": false,
+        "HomeDisabled": false
+      },
+      "73f2c04d-176a-4586-9ff5-69fae63321ef": {
+        "ID": "73f2c04d-176a-4586-9ff5-69fae63321ef",
+        "Name": "General Converter",
+        "Version": "2.1.0",
+        "ActionKeywords": [
+          "gc"
+        ],
+        "Priority": 0,
+        "SearchDelayTime": null,
+        "Disabled": false,
+        "HomeDisabled": false
+      },
+      "AEE8A20C7A854A33A41A209B7D34D44C": {
+        "ID": "AEE8A20C7A854A33A41A209B7D34D44C",
+        "Name": "PortViewer",
+        "Version": "1.0.0",
+        "ActionKeywords": [
+          "pv"
+        ],
+        "Priority": 0,
+        "SearchDelayTime": null,
+        "Disabled": false,
+        "HomeDisabled": false
+      },
+      "77435DA907472F189B759F9F4F3E3C23": {
+        "ID": "77435DA907472F189B759F9F4F3E3C23",
+        "Name": "When to Expect",
+        "Version": "1.0.0",
+        "ActionKeywords": [
+          "when"
+        ],
+        "Priority": 0,
+        "SearchDelayTime": null,
+        "Disabled": false,
+        "HomeDisabled": false
+      }
+    }
+  }
+}
