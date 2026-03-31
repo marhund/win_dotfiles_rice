@@ -1,0 +1,30 @@
+#os junk
+Thumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+*.lnk
+
+#pt junk
+PowerToys/**/Logs/
+PowerToys/**/Backup/
+PowerToys/**/Updates/
+PowerToys/**/Telemetry/
+
+#terminal junk
+*_history
+*.transcript
+*PSScriptPolicy*.ps1
+
+#fuck me bruh
+.env
+*.pfx
+*.cer
+*.key
+*secret*
+*password*
+*.ssh/
+
+#change later
+*.zip
+*.rar
+*.exe
