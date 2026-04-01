@@ -35,7 +35,7 @@ Write-Host "[3] Rice + Extra (Rice Stuff + Helium browser & Zed Editor)"
 $menuChoice = Read-Host "Select an option (1/2/3)"
 
 # define the app arrays
-$RiceApps = @("Flow-Launcher.Flow-Launcher", "RamenSoftware.Windhawk", "Microsoft.PowerToys","ajeetdsouza.zoxide", "JanDeDobbeleer.OhMyPosh", "QL-Win.QuickLook", "AmN.yasb", "mki2067.DropShelf", "Autohotkey.Autohotkey", "Henry++.MemReduct", "BitSum.ProcessLasso", "AltSnap.AltSnap")
+$RiceApps = @("Flow-Launcher.Flow-Launcher", "RamenSoftware.Windhawk", "Microsoft.PowerToys", "Microsoft.PowerShell", "ajeetdsouza.zoxide", "JanDeDobbeleer.OhMyPosh", "QL-Win.QuickLook", "AmN.yasb", "mki2067.DropShelf", "Autohotkey.Autohotkey", "Henry++.MemReduct", "BitSum.ProcessLasso", "AltSnap.AltSnap")
 $FuncApps = @("ImputNet.Helium", "Zed.Zed")
 
 $AppInstallList = @() # changing list depending on the user choice

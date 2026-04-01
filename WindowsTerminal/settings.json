@@ -4,7 +4,7 @@
     "actions": [],
     "copyFormatting": "none",
     "copyOnSelect": false,
-    "defaultProfile": "{0d2410a1-f435-439c-a0a0-b8616189b2bd}",
+    "defaultProfile": "{574e775e-4f2a-5b96-ac1e-a2962a402336}",
     "focusFollowMouse": true,
     "keybindings": 
     [
@@ -39,7 +39,7 @@
         "list": 
         [
             {
-                "colorScheme": "Dark+",
+                "colorScheme": "One Half Dark",
                 "commandline": "%SystemRoot%\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
                 "guid": "{61c54bbd-c2c6-5271-96e7-009a87ff44bf}",
                 "hidden": false,
@@ -65,7 +65,7 @@
                 "colorScheme": "Vintage",
                 "commandline": "%SystemRoot%\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
                 "cursorShape": "underscore",
-                "elevate": true,
+                "elevate": false,
                 "experimental.rainbowSuggestions": true,
                 "font": 
                 {
@@ -100,6 +100,14 @@
                 "hidden": false,
                 "name": "Developer PowerShell for VS 2022",
                 "source": "Windows.Terminal.VisualStudio"
+            },
+            {
+                "colorScheme": "Tango Dark",
+                "guid": "{574e775e-4f2a-5b96-ac1e-a2962a402336}",
+                "hidden": false,
+                "name": "PowerShell",
+                "opacity": 75,
+                "source": "Windows.Terminal.PowershellCore"
             }
         ]
     },
