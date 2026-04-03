@@ -282,6 +282,7 @@ Add-ToStartup "MyHotkeys" "$RepoPath\AHK\dotfiles_main_scr.ahk"
 Add-ToStartup "AltSnap" "AltSnap.exe"
 Add-ToStartup "ProcessLasso" "ProcessLassoLauncher.exe"
 Add-ToStartup "MemReduct" "memreduct.exe"
+Add-ToStartup "Dropshelf" "Dropshelf.exe"
 #powertoys will do that themselves
 
 # =====================================================================
@@ -514,6 +515,6 @@ if ($installFonts)
     }
 }
 
-Write-Host "`nSetup complete! Please restart your computer and check documentation/wiki for the remaining manual steps."-ForegroundColor Green
+Write-Host "`nSetup complete! Please restart your computer and check wiki/documentation for the remaining manual steps."-ForegroundColor Green
 Stop-Transcript
 Pause
