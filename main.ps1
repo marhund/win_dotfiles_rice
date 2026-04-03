@@ -107,7 +107,8 @@ $RiceApps = @("Flow-Launcher.Flow-Launcher",
     "Autohotkey.Autohotkey",
     "Henry++.MemReduct",
     "BitSum.ProcessLasso",
-    "AltSnap.AltSnap")
+    "AltSnap.AltSnap",
+    "FxSound.FxSound")
 
 $FuncApps = @("ImputNet.Helium",
     "ZedIndustries.Zed",
