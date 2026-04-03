@@ -31,7 +31,7 @@
 ; =====================================================================
 ; QUICK APP LAUNCHERS
 ; =====================================================================
-; '#' = Windows Key | '+' = Shift Key
+; "#" = Windows Key | "+" = Shift Key | "!" = Alt Key
 
 ; Win + Shift + Z -> Open Zed Editor
 #+z::Run("zed.exe")
@@ -50,14 +50,14 @@
 ; Win + Shift + W -> Open Windhawk
 #+w::Run("C:\Program Files\Windhawk\windhawk.exe")
 
-; Win + Shift + M -> Silently Flush RAM using Mem Reduct
+; Win + Shift + M -> Flush RAM using Mem Reduct
 #+m::Run("C:\Program Files\Mem Reduct\memreduct.exe -clean", , "Hide")
 
-; Win + W -> Helium browser
-#w::Run(EnvGet("LocalAppData") "\imput\Helium\Application\chrome.exe")
+; Win + W -> browser   INPUT PATH TO YOUR BROSWER .EXE
+#w::Run()
 
 ; =====================================================================
-; THEMES
+; THEMES (realistically just wallpaper and colors)
 ; =====================================================================
 
 ; Win + Alt + F1 -> Switch to Purple Theme
@@ -68,6 +68,18 @@
 
 ; Win + Alt + F3 -> Switch to Gray Theme
 #!F3::SwitchTheme(EnvGet("USERPROFILE") "\Downloads\WindowsSetup\win_dotfiles_rice-main\Wallpapers\white_lava.jpg", "0x101010")
+
+; Win + Alt + F4 -> Switch to Indigo Theme
+#!F3::SwitchTheme(EnvGet("USERPROFILE") "\Downloads\WindowsSetup\win_dotfiles_rice-main\Wallpapers\aesthetic_deer.png", "0x101010")
+
+; Win + Alt + F5 -> Switch to Brownish-Grey Theme
+#!F3::SwitchTheme(EnvGet("USERPROFILE") "\Downloads\WindowsSetup\win_dotfiles_rice-main\Wallpapers\lowlight_png", "0x101010")
+
+; Win + Alt + F6 -> Switch to Grey-Purple Theme
+#!F3::SwitchTheme(EnvGet("USERPROFILE") "\Downloads\WindowsSetup\win_dotfiles_rice-main\Wallpapers\lowlight_2.png", "0x101010")
+
+; Win + Alt + F7 -> Switch to Brown Theme
+#!F3::SwitchTheme(EnvGet("USERPROFILE") "\Downloads\WindowsSetup\win_dotfiles_rice-main\Wallpapers\retro-room.png", "0x101010")
 
 SwitchTheme(WallpaperPath, AccentColorABGR) {
     ; 1. Change Wallpaper instantly
