@@ -1,6 +1,14 @@
 # marhund's Windows dotfiles / setup
 
-An automated Windows setup script designed for both a completely fresh and/or used Windows installation. Full wiki in production.
+An automated Windows setup script designed for both a completely fresh and/or used Windows installation. This README is quite bare bones and more for people who know what they are doing when it comes to configuring `.json` and `.yaml` files, or are familiar with the applications listed below. Full wiki for everyone in production.
+
+## Preview
+
+![Alt text](assets/firewatch_theme_1.png)
+![Alt text](assets/firewatch_theme_2.png)
+![Alt text](assets/greenery_theme_1.png)
+![Alt text](assets/greenery_theme_2.png)
+![Alt text](assets/white_lava_theme_1.png)
 
 <details> 
   <summary>Core features</summary> 
@@ -15,7 +23,7 @@ An automated Windows setup script designed for both a completely fresh and/or us
 
 ## Description
 
-Setting up a Windows enviroment to not be comletely goy-garbage from scratch is tedious. These "dotfiles" aim for a clean, Flow Launcher-centric Windows enviroment. Almost the whole process is automated using PowerShell and Winget. Upon execution, the script prompts for administrative privileges and provides a menu to choose your setup level. It handles everything from HWID Windows activation (via MAS) and system debloating (via Chris Titus Tool or Talon) to installing terminal environments (PowerShell 7, Oh My Posh, Zoxide) and ricing utilities (Windhawk, YASB, Flow-Launcher). It automatically symlinks settings and configures AutoHotkey (v2) for shortcuts, text bangs and "theme" switching.
+The age old "just use Linux" is a valid, yet not a complete solution. Some programs or games just don't work on Linux, and you have to be running Windows, just like me. Setting up a Windows enviroment to not be comletely goy-garbage from scratch is tedious. These "dotfiles" aim for a clean, Flow Launcher-centric Windows enviroment. Almost the whole process is automated using PowerShell and Winget. Upon execution, the script prompts for administrative privileges and provides a menu to choose your setup level. It handles everything from HWID Windows activation (via MAS) and system debloating (via Chris Titus Tool or Talon) to installing terminal environments (PowerShell 7, Oh My Posh, Zoxide) and ricing utilities (Windhawk, YASB, Flow-Launcher). It automatically symlinks settings and configures AutoHotkey (v2) for shortcuts, text bangs and "theme" switching.
 
 This whole thing started as a learning project. Have mercy on me, I am working on this alone in the evenings with having a full-time job.
 
@@ -39,27 +47,29 @@ irm https://raw.githubusercontent.com/marhund/win_dotfiles_rice/main/install.ps1
 The script will automatically download the latest ZIP from this repository, extract it to your Downloads folder, and launch the install.
 
 > [!IMPORTANT]
-> Not everything is automatic check the section "Manual tweaks" to see more.
+> Not everything is automatic, check the section "Manual tweaks" to see more.
 ### Included ricing/functionality apps
 
-- **Flow Launcher** config
-- **YASB** with custom styling
-- **DropShelf**
-- **QuickLook**
-- **AltSnap**
-- **PowerToys** slightly preconfigured
-- **Windhawk** with the most useful stuff preinstalled
-- **Autohotkey** script with custom keybinds, text settings and "theme" switching
-- **Memreduct** for memory management
-- **ProcessLasso** for memory management
-- **Zed** - in the Extra variant
-- **Helium** browser
-- **Windows Terminal** styling
-- **PowerShell** config
--  **Oh My Posh** select themes, so far not any from me
--  **Fastfetch** in the Extra variant
+- [**Flow Launcher**](https://www.flowlauncher.com/) config
+- [**YASB**](https://github.com/amnweb/yasb) with custom styling
+- [**DropShelf**](https://apps.microsoft.com/detail/9mzpc6p14l7n?hl=en-US)
+- [**QuickLook**](https://github.com/QL-Win/QuickLook)
+- [**AltSnap**](https://github.com/RamonUnch/AltSnap)
+- [**PowerToys**](https://github.com/microsoft/PowerToys) slightly preconfigured
+- [**Windhawk**](https://windhawk.net/) with the most useful stuff preinstalled
+- [**Autohotkey**](https://www.autohotkey.com/) script with custom keybinds, text settings and "theme" switching
+- [**Memreduct**](https://memreduct.org/2024/03/12/mem-reduct-installation-and-setup-guide/) for memory management
+- [**FxSound**](https://www.fxsound.com/) for better audio experience
+- [**ProcessLasso**](https://bitsum.com/download-process-lasso/) for memory management
+- [**Zed**](https://zed.dev/) - in the Extra variant
+- [**Helium**](https://helium.computer/) browser in the Extra variant
+- [**Windows Terminal**](https://github.com/microsoft/terminal) styling
+- [**PowerShell**](https://github.com/PowerShell/PowerShell) config
+- [**Oh My Posh**](https://ohmyposh.net/) select themes, so far not any from me
+- [**Zoxide**](https://github.com/ajeetdsouza/zoxide)
+- [**Fastfetch**](https://github.com/fastfetch-cli/fastfetch) in the Extra variant
 
-## Manual tweaks
+## Manual tweaks / After install
 
 After script finishes running, restart your PC. On first boot after, give it more time to digest what just happened to it. Various things were added to the Startup folder, some will pop-up and require manual settings to start them minimized next time. These include:
 - Process Lasso
@@ -68,11 +78,13 @@ After script finishes running, restart your PC. On first boot after, give it mor
 
 Then, Windhawk will have to be set-up manually. 12 mods come preinstalled, however, they have to be manually compiled and activated.
 
-YASB requires your own  WeatherAPI key in the config.yaml file.
+PowerToys will also require you to skim through and configure it a bit, I don't use them much, therefore the preinstalled config is very minimal and not very useful.
+
+YASB requires your own  WeatherAPI key in the `config.yaml file`.
 
 If you want to tweak some keybindings, themes, text bangs, you will have to edit `AHK\dotfiles_main_scr.ahk` script.
 
-If you installed Zed, the theme that I use is Catppuccin Espresso (Blur).
+If you installed Zed, the theme that I use is `Catppuccin Espresso (Blur)`.
 
 > [!IMPORTANT]
 > PowerToys are kinda annoying and force themselves onto the Ctrl+Alt+Space shortcut. Disable  `PowerToysRun ` in PowerToys to not clash with FlowLauncher. Alternatively, configure your own keybind.
@@ -131,10 +143,6 @@ Certain vanilla keybinds are removed, such as Win+T for the bullshit widget. If 
     <td><kbd>Win</kbd> + <kbd>Shift</kbd>+<kbd>C</kbd></td>
   </tr>
   <tr>
-    <td>Theme switching</td>
-    <td><kbd>Win</kbd> + <kbd>Alt</kbd>+<kbd>Function keys</kbd></td>
-  </tr>
-  <tr>
     <td>FancyZones editor</td>
     <td><kbd>Win</kbd> + <kbd>Shift</kbd>+<kbd>F</kbd></td>
   </tr>
@@ -151,7 +159,7 @@ Certain vanilla keybinds are removed, such as Win+T for the bullshit widget. If 
 ## Inspirations and shoutouts
 
 > [!NOTE]
-> This list is by no means exhaustive
+> This list is by no means exhaustive.
 
 - [end_4](https://github.com/end-4/dots-hyprland) and his dotfiles, which I am currently user of on my linux laptop, and I got this whole idea in motion because of his setup
 - [Raven Development Team](https://ravendevteam.org/) for Talon utility
