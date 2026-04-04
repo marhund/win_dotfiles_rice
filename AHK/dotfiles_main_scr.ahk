@@ -61,35 +61,30 @@
 ; =====================================================================
 
 ; Win + Alt + F1 -> Switch to Purple Theme
-#!F1::SwitchTheme(EnvGet("USERPROFILE") "\Downloads\WindowsSetup\win_dotfiles_rice-main\Wallpapers\firewatch.jpg", "0xAC6D73")
+#!F1::SwitchTheme(EnvGet("USERPROFILE") "\Downloads\WindowsSetup\win_dotfiles_rice-main\Wallpapers\firewatch.jpg")
 
 ; Win + Alt + F2 -> Switch to Green Theme
-#!F2::SwitchTheme(EnvGet("USERPROFILE") "\Downloads\WindowsSetup\win_dotfiles_rice-main\Wallpapers\greenery.jpg", "0x058249")
+#!F2::SwitchTheme(EnvGet("USERPROFILE") "\Downloads\WindowsSetup\win_dotfiles_rice-main\Wallpapers\greenery.jpg")
 
 ; Win + Alt + F3 -> Switch to Gray Theme
-#!F3::SwitchTheme(EnvGet("USERPROFILE") "\Downloads\WindowsSetup\win_dotfiles_rice-main\Wallpapers\white_lava.jpg", "0x101010")
+#!F3::SwitchTheme(EnvGet("USERPROFILE") "\Downloads\WindowsSetup\win_dotfiles_rice-main\Wallpapers\white_lava.jpg")
 
 ; Win + Alt + F4 -> Switch to Indigo Theme
-#!F3::SwitchTheme(EnvGet("USERPROFILE") "\Downloads\WindowsSetup\win_dotfiles_rice-main\Wallpapers\aesthetic_deer.png", "0x101010")
+#!F3::SwitchTheme(EnvGet("USERPROFILE") "\Downloads\WindowsSetup\win_dotfiles_rice-main\Wallpapers\aesthetic_deer.png")
 
 ; Win + Alt + F5 -> Switch to Brownish-Grey Theme
-#!F3::SwitchTheme(EnvGet("USERPROFILE") "\Downloads\WindowsSetup\win_dotfiles_rice-main\Wallpapers\lowlight_png", "0x101010")
+#!F3::SwitchTheme(EnvGet("USERPROFILE") "\Downloads\WindowsSetup\win_dotfiles_rice-main\Wallpapers\lowlight_png")
 
 ; Win + Alt + F6 -> Switch to Grey-Purple Theme
-#!F3::SwitchTheme(EnvGet("USERPROFILE") "\Downloads\WindowsSetup\win_dotfiles_rice-main\Wallpapers\lowlight_2.png", "0x101010")
+#!F3::SwitchTheme(EnvGet("USERPROFILE") "\Downloads\WindowsSetup\win_dotfiles_rice-main\Wallpapers\lowlight_2.png")
 
 ; Win + Alt + F7 -> Switch to Brown Theme
-#!F3::SwitchTheme(EnvGet("USERPROFILE") "\Downloads\WindowsSetup\win_dotfiles_rice-main\Wallpapers\retro-room.png", "0x101010")
+#!F3::SwitchTheme(EnvGet("USERPROFILE") "\Downloads\WindowsSetup\win_dotfiles_rice-main\Wallpapers\retro-room.png")
 
-SwitchTheme(WallpaperPath, AccentColorABGR) {
-    ; 1. Change Wallpaper instantly
-    DllCall("SystemParametersInfo", "UInt", 0x14, "UInt", 0, "Str", WallpaperPath, "UInt", 3)
-
-    ; 2. Change Windows Window Border Accent Color
-    RegWrite(AccentColorABGR, "REG_DWORD", "HKCU\Software\Microsoft\Windows\DWM", "AccentColor")
-
-    ; 4. Restart Explorer to force Windows border colors to update
-    ProcessClose("explorer.exe")
+; new function replacing the old one, now imports VirtualDesktop via pwsh, so the wallpaper changes in all desktops and doesnt crash windhawk
+SwitchTheme(WallpaperPath) {
+    PSCmd := "Import-Module VirtualDesktop -DisableNameChecking; Set-AllDesktopWallpapers -Path '" WallpaperPath "'"
+    RunWait('pwsh -ExecutionPolicy Bypass -NoProfile -WindowStyle Hidden -Command "' PSCmd '"')
 }
 
 ; =====================================================================

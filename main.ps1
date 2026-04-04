@@ -235,6 +235,13 @@ foreach ($app in $AppInstallList)
     }
 }
 
+#fix for the buggy themeswtiching (virtual desktops) - now uses a pwsh module named VirtualDesktop, its a bit slower, but it works
+Write-Host "Installing VirtualDesktop Module for theme switching..." -ForegroundColor Cyan
+Set-PSRepository -Name "PSGallery" -InstallationPolicy Trusted -ErrorAction SilentlyContinue
+Install-Module -Name VirtualDesktop -Scope CurrentUser -Force -AllowClobber
+Write-Host "VirtualDesktop Module installed!" -ForegroundColor Green
+
+
 Update-EnvironmentVars   #singular use of the function from block 0
 # =====================================================================
 # 5. STARTUP APPS
