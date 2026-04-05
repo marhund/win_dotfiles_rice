@@ -2,6 +2,18 @@
 
 An automated Windows setup script designed for both a completely fresh and/or used Windows installation. This README is quite bare bones and more for people who know what they are doing when it comes to configuring `.json` and `.yaml` files, or are familiar with the applications listed below. Full wiki for everyone in production.
 
+<details> 
+  <summary>Core features</summary> 
+
+  - **Debloat**: Usage of Chris Titus Winutil or Talon per users choice for Windows debloating (optional)
+  - **Functionality**: Plethora of usability first (and ricing) programs and applications
+  - **No Tiling windows manager**: You do not need it. Stop LARPing.
+  - **No Anime**: I hate weebs
+  - **NO ELECTRON APPS**: Script (unless user chooses himself in CTT) installs no bullshit RAM-hogging Electron applications, ie. no Discord, Obsidian, Spotify, VS Code..
+  - **Transparent installation**: User has full control over the script, if he chooses to
+  
+</details>
+
 ## Preview
 
 ![Alt text](assets/firewatch_theme_1.png)
@@ -9,17 +21,6 @@ An automated Windows setup script designed for both a completely fresh and/or us
 ![Alt text](assets/greenery_theme_1.png)
 ![Alt text](assets/greenery_theme_2.png)
 ![Alt text](assets/white_lava_theme_1.png)
-
-<details> 
-  <summary>Core features</summary> 
-
-  - **Debloat**: Usage of Chris Titus Winutil or Talon per users choice for Windows debloating (optional)
-  - **Functionality**: Plethora of usability first programs and applications
-  - **No Tiling windows manager**: You do not need it. Stop LARPing.
-  - **RAM friendly**: NO ELECTRON APPS - script (unless user chooses himself in CTT) installs no bullshit RAM-hogging Electron applications, ie. no Discord, Obsidian, VS Code..
-  - **Transparent installation**: User has full control over the script, if he chooses to
-  
-</details>
 
 ## Description
 
@@ -38,7 +39,7 @@ This whole thing started as a learning project. Have mercy on me, I am working o
 ### Installing & Executing
 You do not need to download the repository manually. You can run the entire installation process directly from PowerShell terminal.
 
-Open Windows PowerShell (as Administrator).
+Open PowerShell (as Administrator).
 
 ```
 irm https://raw.githubusercontent.com/marhund/win_dotfiles_rice/main/install.ps1 | iex
@@ -87,7 +88,7 @@ If you want to tweak some keybindings, themes, text bangs, you will have to edit
 If you installed Zed, the theme that I use is `Catppuccin Espresso (Blur)`.
 
 > [!IMPORTANT]
-> PowerToys are kinda annoying and force themselves onto the Ctrl+Alt+Space shortcut. Disable  `PowerToysRun ` in PowerToys to not clash with FlowLauncher. Alternatively, configure your own keybind.
+> PowerToys are kinda annoying and force themselves onto the Ctrl+Alt+Space (AltGR + Space) shortcut. Disable  `PowerToysRun ` in PowerToys to not clash with FlowLauncher. Alternatively, configure your own keybind.
 
 ## Keybindings
 The script introduces various new keybindings. Table for V2.
@@ -101,6 +102,10 @@ Certain vanilla keybinds are removed, such as Win+T for the bullshit widget. If 
   <tr>
     <td>Open Terminal</td>
     <td><kbd>Win</kbd> + <kbd>Enter</kbd></td>
+  </tr>
+  <tr>
+    <td>Open FlowLauncher</td>
+    <td><kbd>Alt GR</kbd> + <kbd>Space</kbd></td>
   </tr>
   <tr>
     <td>Quit App / Window (alternative to Alt+F4)</td>
@@ -176,7 +181,7 @@ This project is licensed under the MIT License - see the LICENSE.md file for det
 ### Version History
 1.0
 
- - Initial Release & Automation setup
+ - Initial release & Automation setup
 
 2.0
 
