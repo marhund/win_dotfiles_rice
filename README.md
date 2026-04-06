@@ -10,6 +10,7 @@ An automated Windows setup script designed for both a completely fresh and/or us
   - **No Tiling windows manager**: You do not need it. Stop LARPing.
   - **No Anime**: I hate weebs
   - **NO ELECTRON APPS**: Script (unless user chooses himself in CTT) installs no bullshit RAM-hogging Electron applications, ie. no Discord, Obsidian, Spotify, VS Code..
+  - **Moderate RAM usage**: Look, Windows is never gonna be RAM friendly, but stuff like Seelen UI is crazy.
   - **Transparent installation**: User has full control over the script, if he chooses to
   
 </details>
@@ -81,7 +82,7 @@ Then, Windhawk will have to be set-up manually. 12 mods come preinstalled, howev
 
 PowerToys will also require you to skim through and configure it a bit, I don't use them much, therefore the preinstalled config is very minimal and not very useful.
 
-YASB requires your own  WeatherAPI key in the `config.yaml file`.
+YASB requires your own  WeatherAPI key in the `config.yaml` file.
 
 If you want to tweak some keybindings, themes, text bangs, you will have to edit `AHK\dotfiles_main_scr.ahk` script.
 
