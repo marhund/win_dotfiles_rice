@@ -18,7 +18,10 @@ An automated Windows setup script designed for both a completely fresh and/or us
 ## Preview
 
 ![Preview](https://raw.githubusercontent.com/marhund/win_dotfiles_rice/assets/assets/firewatch_theme_1.png)
-
+![Preview](https://raw.githubusercontent.com/marhund/win_dotfiles_rice/assets/assets/firewatch_theme_2.png)
+![Preview](https://raw.githubusercontent.com/marhund/win_dotfiles_rice/assets/assets/greenery_theme_1.png)
+![Preview](https://raw.githubusercontent.com/marhund/win_dotfiles_rice/assets/assets/greenery_theme_2.png)
+![Preview](https://raw.githubusercontent.com/marhund/win_dotfiles_rice/assets/assets/white_lava_theme_1.png)
 ## Description
 
 The age old "just use Linux" is a valid, yet not a complete solution. Some programs or games just don't work on Linux, and you have to be running Windows, just like me. Setting up a Windows enviroment to not be comletely goy-garbage from scratch is tedious. These "dotfiles" aim for a clean, Flow Launcher-centric Windows enviroment. Almost the whole process is automated using PowerShell and Winget. Upon execution, the script prompts for administrative privileges and provides a menu to choose your setup level. It handles everything from HWID Windows activation (via MAS) and system debloating (via Chris Titus Tool or Talon) to installing terminal environments (PowerShell 7, Oh My Posh, Zoxide) and ricing utilities (Windhawk, YASB, Flow-Launcher). It automatically symlinks settings and configures AutoHotkey (v2) for shortcuts, text bangs and "theme" switching.
