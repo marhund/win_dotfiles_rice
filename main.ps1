@@ -196,10 +196,10 @@ if ($RunTalon)
     {
         $talonScript = Invoke-RestMethod -Uri "https://debloat.win" -ErrorAction Stop
         Invoke-Expression $talonScript
-        Write-Log "Talon process finished."
+        Write-Host "Talon process finished."
     } catch
     {
-        Write-Log "Failed to download or run Talon. Error: $_"
+        Write-Host "Failed to download or run Talon. Error: $_"
     }
 }
 

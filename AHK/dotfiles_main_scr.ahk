@@ -3,10 +3,10 @@
 ; =====================================================================
 ; GENERAL QUALITY OF LIFE
 ; =====================================================================
-; Win + Q -> Close Active Window (Replaces Alt+F4)
+; Win + Q -> Close active window (replaces Alt+F4)
 #q::WinClose("A")
 
-; Win + Enter -> Open Windows Terminal (Kills the native Narrator shortcut)
+; Win + Enter -> Open Windows terminal (kills the native narrator shortcut)
 #Enter::Run("wt.exe")
 
 ;Current date
@@ -31,7 +31,7 @@
 ; =====================================================================
 ; QUICK APP LAUNCHERS
 ; =====================================================================
-; "#" = Windows Key | "+" = Shift Key | "!" = Alt Key
+; "#" = Windows key | "+" = Shift key | "!" = Alt key
 
 ; Win + Shift + Z -> Open Zed Editor
 #+z::Run("zed.exe")
@@ -81,7 +81,7 @@
 ; Win + Alt + F7 -> Switch to Brown Theme
 #!F3::SwitchTheme(EnvGet("USERPROFILE") "\Downloads\WindowsSetup\win_dotfiles_rice-main\Wallpapers\retro-room.png")
 
-; new function replacing the old one, now imports VirtualDesktop via pwsh, so the wallpaper changes in all desktops and doesnt crash windhawk
+; new function replacing the old one, now imports VirtualDesktop via pwsh, so the wallpaper changes in all desktops and doesnt crash windhawk - slow but it works
 SwitchTheme(WallpaperPath) {
     PSCmd := "Import-Module VirtualDesktop -DisableNameChecking; Set-AllDesktopWallpapers -Path '" WallpaperPath "'"
     RunWait('pwsh -ExecutionPolicy Bypass -NoProfile -WindowStyle Hidden -Command "' PSCmd '"')
