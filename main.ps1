@@ -42,7 +42,13 @@ function Require-Admin
         ).IsInRole([Security.Principal.WindowsBuiltinRole]::Administrator))
     {
         Write-Host "Restarting as admin..."
-        Start-Process powershell "-ExecutionPolicy Bypass -File `"$PSCommandPath`"" -Verb RunAs
+        #debug - checks what powershell is running
+        $psExe = if ($PSVersionTable.PSVersion.Major -ge 7)
+        { "pwsh" 
+        } else
+        { "powershell" 
+        }
+        Start-Process $psExe "-ExecutionPolicy Bypass -File `"$PSCommandPath`"" -Verb RunAs
         exit
     }
 }
@@ -209,6 +215,11 @@ if (-not (Get-Command winget -ErrorAction SilentlyContinue))
     Write-Host "Winget not installed"
     exit
 }
+
+# 0x8A15000F winget error fix
+Write-Host "Resetting and updating Winget sources..." -ForegroundColor Cyan
+winget source reset --force | Out-Null
+winget source update | Out-Null
 
 # install apps (if missed the important ones in ctt)
 Write-Host "`nStarting application installs..." -ForegroundColor Yellow
