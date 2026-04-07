@@ -48,12 +48,6 @@ function Require-Admin
         } else
         { "powershell"
         }
-        #debug - check$psExeershell is running
-        $psExe = if ($PSVersionTable.PSVersion.Major -ge 7)
-        { "pwsh" 
-        } else
-        { "powershell" 
-        }
         Start-Process $psExe "-ExecutionPolicy Bypass -File `"$PSCommandPath`"" -Verb RunAs
         exit
     }
@@ -199,33 +193,27 @@ if ($RunCTT)
     }
 }
 
-# run
-$psExe2 = if ($PSVersionTable.PSVersion.Major -ge 7)
-{ "pwsh"
-} else
-{ "powershell"
-} Talon (if option 4 or 5)
-# launchea talon in a separate terminal window
-Start-Process $psExe2 -ArgumentList "-NoProfile -ExecutionPolicy Bypass -Command `"irm https://debloat.win | iex`"" -Wait
-Write-Host "Talon process finished. Resuming main script..." -ForegroundColor Green{
+# run Talon (if option 4 or 5)
+if ($RunTalon)
+{
     Write-Host "Running Talon Debloater..."
-    Write-Host "WARNING: I HOPE YOU READ ABOUT TALON. Let it finish its process. It will automatically return to this script when done." -ForegroundColor DarkGray
+    Write-Host "WARNING: I HOPE YOU READ ABOUT TALON. Let it finish its process. Then it will probably pause, close the terminal window that Talon is in!." -ForegroundColor DarkGray
     try
     {
-        $talonScript = Invoke-RestMethod -Uri "https://debloat.win" -ErrorAction Stop
-        Invoke-Expression $talonScript
-        Write-Host "Talon process finished."
+        $psExe2 = if ($PSVersionTable.PSVersion.Major -ge 7)
+        { "pwsh"
+        } else
+        { "powershell"
+        }
+        # launchea talon in a separate terminal window
+        Start-Process $psExe2 -ArgumentList "-NoProfile -ExecutionPolicy Bypass -Command `"irm https://debloat.win | iex`"" -Wait
+        Write-Host "Talon process finished. Resuming main script..." -ForegroundColor Green
     } catch
     {
         Write-Host "Failed to download or run Talon. Error: $_"
     }
 }
 
-
-# 0x8A15000F winget error fix
-Write-Host "Resetting and updating Winget sources..." -ForegroundColor Cyan
-winget source reset --force | Out-Null
-winget source update | Out-Null
 #error handling
 if (-not (Get-Command winget -ErrorAction SilentlyContinue))
 {
