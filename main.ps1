@@ -44,6 +44,12 @@ function Require-Admin
         Write-Host "Restarting as admin..."
         #debug - checks what powershell is running
         $psExe = if ($PSVersionTable.PSVersion.Major -ge 7)
+        { "pwsh"
+        } else
+        { "powershell"
+        }
+        #debug - check$psExeershell is running
+        $psExe = if ($PSVersionTable.PSVersion.Major -ge 7)
         { "pwsh" 
         } else
         { "powershell" 
@@ -193,9 +199,15 @@ if ($RunCTT)
     }
 }
 
-# run Talon (if option 4 or 5)
-if ($RunTalon)
-{
+# run
+$psExe2 = if ($PSVersionTable.PSVersion.Major -ge 7)
+{ "pwsh"
+} else
+{ "powershell"
+} Talon (if option 4 or 5)
+# launchea talon in a separate terminal window
+Start-Process $psExe2 -ArgumentList "-NoProfile -ExecutionPolicy Bypass -Command `"irm https://debloat.win | iex`"" -Wait
+Write-Host "Talon process finished. Resuming main script..." -ForegroundColor Green{
     Write-Host "Running Talon Debloater..."
     Write-Host "WARNING: I HOPE YOU READ ABOUT TALON. Let it finish its process. It will automatically return to this script when done." -ForegroundColor DarkGray
     try
@@ -209,6 +221,11 @@ if ($RunTalon)
     }
 }
 
+
+# 0x8A15000F winget error fix
+Write-Host "Resetting and updating Winget sources..." -ForegroundColor Cyan
+winget source reset --force | Out-Null
+winget source update | Out-Null
 #error handling
 if (-not (Get-Command winget -ErrorAction SilentlyContinue))
 {
