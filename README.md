@@ -17,11 +17,7 @@ An automated Windows setup script designed for both a completely fresh and/or us
 
 ## Preview
 
-![Alt text](assets/firewatch_theme_1.png)
-![Alt text](assets/firewatch_theme_2.png)
-![Alt text](assets/greenery_theme_1.png)
-![Alt text](assets/greenery_theme_2.png)
-![Alt text](assets/white_lava_theme_1.png)
+![Preview](https://raw.githubusercontent.com/marhund/win_dotfiles_rice/assets/assets/firewatch_theme_1.png)
 
 ## Description
 
