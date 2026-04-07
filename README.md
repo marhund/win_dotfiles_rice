@@ -10,7 +10,7 @@ An automated Windows setup script designed for both a completely fresh and/or us
   - **No Tiling windows manager**: You do not need it. Stop LARPing.
   - **No Anime**: I hate weebs
   - **NO ELECTRON APPS**: Script (unless user chooses himself in CTT) installs no bullshit RAM-hogging Electron applications, ie. no Discord, Obsidian, Spotify, VS Code..
-  - **Moderate RAM usage**: Look, Windows is never gonna be RAM friendly, but stuff like Seelen UI is crazy.
+  - **Low(er) RAM usage**: Look, Windows is never gonna be RAM friendly, but stuff like Seelen UI is crazy. This whole thing adds around 200 - 300 MB idle RAM usage. 
   - **Transparent installation**: User has full control over the script, if he chooses to
   
 </details>
