@@ -7,10 +7,11 @@ An automated Windows setup script designed for both a completely fresh and/or us
 
   - **Debloat**: Usage of Chris Titus Winutil or Talon per users choice for Windows debloating (optional)
   - **Functionality**: Plethora of usability first (and ricing) programs and applications
-  - **No Tiling windows manager**: You do not need it. Stop LARPing.
+  - **No Tiling windows manager**: You do not need it. Stop LARPing. If you do, you ain't reading this anyway.
   - **No Anime**: I hate weebs
   - **NO ELECTRON APPS**: Script (unless user chooses himself in CTT) installs no bullshit RAM-hogging Electron applications, ie. no Discord, Obsidian, Spotify, VS Code..
-  - **Low(er) RAM usage**: Look, Windows is never gonna be RAM friendly, but stuff like Seelen UI is crazy. This whole thing adds around 200 - 300 MB idle RAM usage. 
+  - **Low(er) RAM usage**: Look, Windows is never gonna be RAM friendly, but stuff like Seelen UI is crazy. This whole thing adds around 200 MB tops idle RAM usage.
+  - **Size**: Depends on your choice of mode, however its all around 1.2 GB. PowerToys is the largest program at around 400 MB. 
   - **Transparent installation**: User has full control over the script, if he chooses to
   
 </details>

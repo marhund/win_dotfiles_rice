@@ -95,7 +95,7 @@ Write-Host "[1] Full Setup (Manual CTT Debloat + Rice Stuff)"
 Write-Host "[2] No CTT, Rice Only (No Debloat. Aestethics + some functionality, such as MemReduct and so on...)"
 Write-Host "[3] Rice + Extra (Rice stuff +  Fastfetch, Helium browser & Zed editor)"
 Write-Host "Next options are utilizing Talon, are in active developement and testing. DO NOT RUN them on your daily driver, Talon is rough. It also may interfere with the apps that this script installs. Give it a hour and research (K0 youtube, https://github.com/ravendevteam/talon), to see if that's something you want."
-Write-Host "[4] Talon + Rice stuff (again, RUN ONLY ON FRESH WINDOWS INSTALL - Talon breaks a lot of stuff, deletes a lot of stuff u might actually use, like ALL MS STORE APPS! YOU WILL HAVE TO INSTALL THEM BACK MANUALLY!. This script uses it in its headless mode (v3.0)- you cannot configure it!"
+Write-Host "[4] Talon + Rice stuff (again, RUN ONLY ON FRESH WINDOWS INSTALL - Talon breaks a lot of stuff, deletes a lot of stuff u might actually use, like ALL MS STORE APPS! YOU WILL HAVE TO INSTALL THEM BACK MANUALLY!. This script uses it in its headless mode (v3.0)- you cannot configure it! THIS OPTION LEAVES YOU WITH NO BROSWER. YOU WILL HAVE TO INSTALL ONE USING WINGET."  -ForegroundColor Yellow
 Write-Host "[5] Talon + Extra"  #new for v2 - added talon config options
 Write-Host "[Dev] Full Setup and Helium, which is not in CTT yet] " # new for v2
 $menuChoice = Read-Host "Select an option (1/2/3/4/5/Dev)"
@@ -197,7 +197,7 @@ if ($RunCTT)
 if ($RunTalon)
 {
     Write-Host "Running Talon Debloater..."
-    Write-Host "WARNING: I HOPE YOU READ ABOUT TALON. Let it finish its process. Then it will probably pause, close the terminal window that Talon is in!." -ForegroundColor DarkGray
+    Write-Host "WARNING: I HOPE YOU READ ABOUT TALON. Let it finish its process. Then it will probably pause, close the terminal window that Talon is in!" -ForegroundColor DarkGray
     try
     {
         $psExe2 = if ($PSVersionTable.PSVersion.Major -ge 7)
@@ -299,14 +299,14 @@ Function Add-ToStartup ($AppName, $TargetOrExe)
     }
 }
 
-Add-ToStartup "FlowLauncher" "Flow.Launcher.exe"
+Add-ToStartup "FlowLauncher" "$env:LOCALAPPDATA\FlowLauncher\Flow.Launcher.exe"
 Add-ToStartup "YASB" "yasb.exe"
 Add-ToStartup "MyHotkeys" "$RepoPath\AHK\dotfiles_main_scr.ahk"
-Add-ToStartup "AltSnap" "AltSnap.exe"
+Add-ToStartup "AltSnap" "$env:ROAMINGAPPDATA\AltSnap\AltSnap.exe"
 Add-ToStartup "ProcessLasso" "ProcessLassoLauncher.exe"
-Add-ToStartup "MemReduct" "memreduct.exe"
-Add-ToStartup "Dropshelf" "Dropshelf.exe"
-#powertoys will do that themselves
+Add-ToStartup "MemReduct" "$env:ProgramFiles\Mem Reduct\memreduct.exe"
+Add-ToStartup "Dropshelf" "$env:LOCALAPPDATA\Microsoft\WindowsApps\Dropshelf.exe"
+#powertoys will do that themselves, so will fxsound
 
 # =====================================================================
 # 6. SYMLINKING CONFIGURATIONS

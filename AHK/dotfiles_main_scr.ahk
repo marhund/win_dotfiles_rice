@@ -53,8 +53,8 @@
 ; Win + Shift + M -> Flush RAM using Mem Reduct
 #+m::Run("C:\Program Files\Mem Reduct\memreduct.exe -clean", , "Hide")
 
-; Win + W -> browser   INPUT PATH TO YOUR BROSWER .EXE
-#w::Run()
+; Win + W -> browser   INPUT PATH TO YOUR BROSWER .EXE and uncomment
+; #w::Run()
 
 ; =====================================================================
 ; THEMES (realistically just wallpaper and colors)
@@ -70,16 +70,16 @@
 #!F3::SwitchTheme(EnvGet("USERPROFILE") "\Downloads\WindowsSetup\win_dotfiles_rice-main\Wallpapers\white_lava.jpg")
 
 ; Win + Alt + F4 -> Switch to Indigo Theme
-#!F3::SwitchTheme(EnvGet("USERPROFILE") "\Downloads\WindowsSetup\win_dotfiles_rice-main\Wallpapers\aesthetic_deer.png")
+#!F4::SwitchTheme(EnvGet("USERPROFILE") "\Downloads\WindowsSetup\win_dotfiles_rice-main\Wallpapers\aesthetic_deer.png")
 
 ; Win + Alt + F5 -> Switch to Brownish-Grey Theme
-#!F3::SwitchTheme(EnvGet("USERPROFILE") "\Downloads\WindowsSetup\win_dotfiles_rice-main\Wallpapers\lowlight_png")
+#!F5::SwitchTheme(EnvGet("USERPROFILE") "\Downloads\WindowsSetup\win_dotfiles_rice-main\Wallpapers\lowlight_png")
 
 ; Win + Alt + F6 -> Switch to Grey-Purple Theme
-#!F3::SwitchTheme(EnvGet("USERPROFILE") "\Downloads\WindowsSetup\win_dotfiles_rice-main\Wallpapers\lowlight_2.png")
+#!F6::SwitchTheme(EnvGet("USERPROFILE") "\Downloads\WindowsSetup\win_dotfiles_rice-main\Wallpapers\lowlight_2.png")
 
 ; Win + Alt + F7 -> Switch to Brown Theme
-#!F3::SwitchTheme(EnvGet("USERPROFILE") "\Downloads\WindowsSetup\win_dotfiles_rice-main\Wallpapers\retro-room.png")
+#!F7::SwitchTheme(EnvGet("USERPROFILE") "\Downloads\WindowsSetup\win_dotfiles_rice-main\Wallpapers\retro-room.png")
 
 ; new function replacing the old one, now imports VirtualDesktop via pwsh, so the wallpaper changes in all desktops and doesnt crash windhawk - slow but it works
 SwitchTheme(WallpaperPath) {
