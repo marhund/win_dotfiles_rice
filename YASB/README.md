@@ -11,7 +11,7 @@ Simple, clean but powerful bar inspired by suckless, dwmblocks.
 - Out of the box gray theme with system accent colors.
 - Many useful features baked in - taskbar, workspaces, audio controls, media, calendar, weather, 2 toggle menus with system resources, network traffic, recycle bin...
 - Keybindings for power users.
-- From [marund's setup](https://github.com/marhund/win_dotfiles_rice), designed to be used with Flow Launcher.
+- From [marhund's setup](https://github.com/marhund/win_dotfiles_rice), designed to be used with Flow Launcher.
 
 ## Instalation
 
