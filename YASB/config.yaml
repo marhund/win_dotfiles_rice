@@ -317,6 +317,10 @@ widgets:
   bin:
     type: "yasb.recycle_bin.RecycleBinWidget"
     options:
+      keybindings:
+        - keys: "alt+b"
+          action: "open_bin"
+          screen: active
       label: "<span>{icon}</span> Bin"
       icons:
         bin_empty: "\udb82\ude7a"
